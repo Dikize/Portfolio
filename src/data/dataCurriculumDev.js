@@ -1,5 +1,22 @@
-export const dataCurriculum = [{
+export const dataCurriculum = [    
+    {
         id: 1,
+        name: 'Agent de maintenance',
+        entreprise: 'Otis',
+        dateEntre: '03/2022',
+        dateSorti: 'Poste',
+        tache: [
+            "Interventions de maintenance, préventive et corrective, entretient, essaie et surveillance des Ascenseurs.",
+        ],
+        tache2: [
+            "Identification et diagnostic de panne en se conformant avec rigueur aux consignes et normes de sécurité.",
+        ],
+        tache3: [
+            "Assurer la mise en conformité des installations en cas d’évolution de la réglementation.",
+        ],
+    },
+    {
+        id: 2,
         name: 'Développeur Web',
         entreprise: 'OpenClassrooms',
         dateEntre: "04/2021",
@@ -39,7 +56,7 @@ export const dataCurriculum = [{
         ],
     },
     {
-        id: 2,
+        id: 3,
         name: 'Responsable Technique',
         entreprise: 'IMC TELECOM',
         dateEntre: "05/2020",
@@ -80,17 +97,14 @@ export const dataCurriculum = [{
         ],
     },
     {
-        id: 3,
+        id: 4,
         name: 'Chef d’équipe Linky',
         entreprise: 'IMC TELECOM',
         dateEntre: '02/2020',
         dateSorti: '05/2020',
-        tache: [
-
-        ],
     },
     {
-        id: 4,
+        id: 5,
         name: 'Chef d’équipe Linky',
         entreprise: 'Energy Dynamics',
         dateEntre: '08/2017',
@@ -114,22 +128,22 @@ export const dataCurriculum = [{
             "Effectuer la formation module 2 et 4 des nouveaux techniciens et les monte en compétence sur le terrain.",
         ],
     },
-    {
-        id: 5,
-        name: 'Agent de maintenance',
-        entreprise: 'Gestamp',
-        dateEntre: '02/2016',
-        dateSorti: '02/2017',
-        tache: [
-            "Interventions de maintenance, préventive et corrective, entretient et surveillance des machines de production.",
-        ],
-        tache2: [
-            "Identification et diagnostic de panne en se conformant avec rigueur aux consignes et normes de sécurité.",
-        ],
-        tache3: [
-            "Assurer la mise en conformité des installations en cas d’évolution de la réglementation.",
-        ],
-    },
+    // {
+    //     id: 5,
+    //     name: 'Agent de maintenance',
+    //     entreprise: 'Gestamp',
+    //     dateEntre: '02/2016',
+    //     dateSorti: '02/2017',
+    //     tache: [
+    //         "Interventions de maintenance, préventive et corrective, entretient et surveillance des machines de production.",
+    //     ],
+    //     tache2: [
+    //         "Identification et diagnostic de panne en se conformant avec rigueur aux consignes et normes de sécurité.",
+    //     ],
+    //     tache3: [
+    //         "Assurer la mise en conformité des installations en cas d’évolution de la réglementation.",
+    //     ],
+    // },
     // {
     //     id: 6,
     //     name: 'Electricien bâtiment',
@@ -147,7 +161,7 @@ export const dataCurriculum = [{
     //     ],
     // },
     {
-        id: 7,
+        id: 6,
         name: 'Electricien maintenance',
         entreprise: 'Cofely GDF',
         dateEntre: '09/2010',
@@ -172,7 +186,7 @@ export const dataCurriculum = [{
         ],
     },
     {
-        id: 8,
+        id: 7,
         name: 'Electricien bâtiment',
         entreprise: 'Locoche',
         dateEntre: '09/2008',

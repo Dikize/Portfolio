@@ -1,18 +1,33 @@
 import React, { Component } from 'react';
+import Swal from "sweetalert2";
 
 class Project extends Component {
     state = {
         showInfo: false
     }
 
+    
     handleInfo = () => {
-        this.setState({ 
-            showInfo: !this.state.showInfo
+        let {name , source, site, info} = this.props.item
+
+        Swal.fire({
+            title: `<strong>${name}</strong>`,
+            html: ` <p>${info}</p> 
+                <button><a className="swalButton" href=${source} rel="noopener noreferrer" className="button" target="_blank">Code source</a></button>
+                <button><a className="swalButton" href=${site} rel="noopener noreferrer" className="button" target="_blank">Site</a></button>
+            `,
         })
     }
+    // handleInfo = () => {
+    //     this.setState({ 
+    //         showInfo: !this.state.showInfo
+    //     })
+    // }
+
+    
 
     render() {
-        let {name, languagesIcons, source, info, picture} = this.props.item
+        let {name, languagesIcons, picture} = this.props.item
         
         return (
             <div className="project">
@@ -26,28 +41,6 @@ class Project extends Component {
                 <span className="infos" onClick={this.handleInfo}>
                     <i className="fas fa-plus-circle"></i>
                 </span>
-
-                {
-                    this.state.showInfo && (
-                        <div className="showInfos">
-                            <div className="infosContent">
-                                <div className="head">
-                                    <h2>{name}</h2>
-                                    <div className="sourceCode">
-                                        <a href={source} rel="noopener noreferrer" className="button" target="_blank">Code source</a>
-                                    </div>
-                                </div>
-
-                                <p className="text">{info}</p>
-
-                            <div className="button return" onClick={this.handleInfo}>Retourner sur la page</div>
-
-                            </div>
-                        
-                        </div>  
-                        
-                    )
-                }
             </div>
         );
     }

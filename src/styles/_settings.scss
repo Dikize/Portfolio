@@ -92,7 +92,8 @@ a:visited {
 }
 
 // image profile
-.idContent {
+@mixin headerAddress {
+    font-family: "Merienda one", sans-serif;
     width: 100%;
 
     img {
@@ -105,8 +106,17 @@ a:visited {
         font-size: x-large;
         text-transform: uppercase;
         letter-spacing: .2rem;
-        margin-top: 1.5rem;
+        margin: 0.5rem 0 0.3rem;
         color: #36D0EA;
+    }
+
+    &>p {
+        font-size: x-large;
+        font-weight: bold;
+        color: #36D0EA;
+        margin-bottom: 0.5rem;
+        text-decoration: underline;
+        text-decoration-style: double;
     }
 }
 
@@ -201,5 +211,4 @@ a:visited {
         margin-left: 0 !important;
     }
 }
-
 

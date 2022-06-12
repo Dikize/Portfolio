@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { dataCurriculum } from '../../data/dataCurriculum';
+import { dataCurriculum } from '../../data/dataCurriculumDev';
 import { TiTickOutline } from "react-icons/ti";
 // import Project from './Project';
 
@@ -21,7 +21,7 @@ class CvParcour extends Component {
                                 <div key={item.id} className="data-cv">
                                     <div className="title">
                                         <span>{item.dateEntre}</span>
-                                        <h3><u>{item.name}</u> <br/><span>{item.entreprise}</span></h3>
+                                        <h3><u>{item.name}</u> <br/><p>{item.entreprise}</p></h3>
                                         <span>{item.dateSorti}</span>
                                     </div>
 

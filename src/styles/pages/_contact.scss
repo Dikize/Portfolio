@@ -6,10 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 45% 35%;
-    grid-template-areas:
-        "1"
-        "2"
-        "3";
+    grid-template-areas: "1""2""3";
 
     .header {
         grid-area: 1;
@@ -164,6 +161,17 @@
             a:nth-child(4) {
                 @include networkAnim(1.6s);
             }
+        }
+    }
+
+    @media (max-width: 850px) {
+        .contactBox {
+            height: 320px;
+            transform: translateY(-50%);
+        }
+
+        .socialNetwork {
+            transform: translateY(-100%);
         }
     }
 }
